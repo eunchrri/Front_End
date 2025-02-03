@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1부터 n까지 더하기</title>
+</head>
+<body>
+  <script>
+    // 즉시 실행 함수 사용하기
+    let sum = 0;
+    (function() {
+      let n = parseInt(prompt('n을 입력하세요.'));
+      for (i = 1; i <= n; i++) {
+        sum += i;
+      }
+      document.write(`1부터 ${n}까지 더하면 ${sum}`);
+    }());
+  </script>
+</body>
+</html>

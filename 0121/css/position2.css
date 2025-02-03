@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#contents {
+  background: url('../images/bg.jpg') no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  position: relative;
+}
+h1 {
+  color: azure;
+  font-size: 120px;
+  text-shadow: 5px 9px 0 #000;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex 실험</title>
+</head>
+<style>
+  .container {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    border: 1px solid #222;
+    background-color: rgb(221, 203, 211);
+    gap: 10px;
+  }
+  .box {
+    flex-basis: 300px; /* 플렉스 항목의 기본 크기를 300px로 지정 */
+  }
+  .box:nth-child(odd) {
+    background-color: #ffc;
+  }
+  .box:nth-child(even) {
+    background-color: #a6f;
+  }
+  p {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* 플렉스 항목의 flex-shrink 지정 */
+  #box1 {
+    flex-shrink: 1;
+  }
+  #box2 {
+    flex-shrink: 0; /* 줄이지 않음 */
+  }
+  #box3 {
+    flex-shrink: 1;
+  }
+  #box4 {
+    flex-shrink: 2;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="box" id="box1"><p>1</p></div>
+    <div class="box" id="box2"><p>2</p></div>
+    <div class="box" id="box3"><p>3</p></div>
+    <div class="box" id="box4"><p>4</p></div>
+  </div>
+</body>
+</html>

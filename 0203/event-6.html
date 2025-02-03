@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM 이벤트 객체 5 - addEventListener</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* html 디폴트 설정 초기화 */
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center; /* 여기까지만 하면 화면의 중간이 안된다 이미지까지만 범위이기 때문 */
+      height: 100vh; /* 화면 정중앙에 놓기 위해(align items 제대로 하기 위해) 설정*/
+    }
+    
+    img {
+      padding: 20px;
+      height: 250px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 4px 4px 5px #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/kitty-1.png" id="cat">
+  </div>
+  <script>
+    let cat = document.querySelector("#cat");
+
+    // addEventListener 안에서 함수 선언
+    cat.addEventListener("mouseover", () => {
+      cat.src = "images/kitty-2.png";
+    });
+
+    cat.addEventListener("mouseout", () => {
+      cat.src = "images/kitty-1.png";
+    }); 
+  </script>
+</body>
+</html>

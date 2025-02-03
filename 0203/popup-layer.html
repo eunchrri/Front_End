@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이어 팝업 창</title>
+  <style>
+    body {
+      background-color: lightgray;
+    }
+
+    .popup {
+      width: 250px;
+      height: 250px;
+      padding: 20px;
+      margin: 40px 60px;
+      background-color: white;
+
+    }
+
+    .button-area {
+      display: flex;
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <p>문서를 열면 팝업 창이 표시됩니다.</p>
+  <div class="popup" id="notice">
+    <h1>공지사항</h1>
+    <ul>
+      <li>공지사항 내용</li>
+      <li>공지사항 내용</li>
+      <li>공지사항 내용</li>
+      <li>공지사항 내용</li>
+    </ul>
+    <div class="button-area">
+      <button id="closebutton">닫기</button>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const close = document.querySelector("#closebutton");
+      const popupBox = document.querySelector(".popup");
+      close.addEventListener("click", () => {
+        document.querySelector(".popup").style.display = "none";
+      })
+    });
+  </script>
+</body>
+</html>

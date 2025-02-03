@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float clear 하기</title>
+  <style>
+    .wrapper {
+      width: 800px;
+      margin: 10px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    .box {
+      padding: 20px;
+      margin: 10px;
+    }
+    #box1 {
+      background-color: #ffd800;
+      float: left;
+    }
+    #box2 {
+      background-color: aquamarine;
+      float: right;
+    }
+    .clear {
+      clear: both;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box" id="box1">박스1</div>
+    <div class="box" id="box2">박스2</div>
+    <p>1월 19일 방송된 KBS 2TV '개그콘서트'(이하 개콘) 1106회에서는 '오스트랄로삐꾸스', '황해 2025', '심곡파출소', '믿는 우리 새끼' 등 코너들이 공개됐다. '오스트랄로삐꾸스' 이종훈은 네일아트 받는 모습으로 무대에 등장, 코너 시작부터 웃음을 줬다. 네일아트를 마친 그는 신윤승의 치킨을 탐냈고, 닭다리에 콜라까지 요구했다. 콜라를 따라주자 이종훈은 손톱이 상하지 않도록 손바닥만 이용해 컵을 잡아 여성 관객들의 폭소를 자아냈다.</p>
+    <p class="clear">1월 19일 방송된 KBS 2TV '개그콘서트'(이하 개콘) 1106회에서는 '오스트랄로삐꾸스', '황해 2025', '심곡파출소', '믿는 우리 새끼' 등 코너들이 공개됐다. '오스트랄로삐꾸스' 이종훈은 네일아트 받는 모습으로 무대에 등장, 코너 시작부터 웃음을 줬다. 네일아트를 마친 그는 신윤승의 치킨을 탐냈고, 닭다리에 콜라까지 요구했다. 콜라를 따라주자 이종훈은 손톱이 상하지 않도록 손바닥만 이용해 컵을 잡아 여성 관객들의 폭소를 자아냈다.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+#accent {
+  background-color: black;
+  color: #fff;
+  /*두번 써도 에러는 아니지만 용도 자체가 한번만 쓰도록하는 것이기 때문에 한번만 쓰도록*/
+}
+p {
+  font-style: italic;
+}
+.blue {
+  color: blue;
+  /*클래스는 중복 가능*/
+}

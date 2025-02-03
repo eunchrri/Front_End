@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>splice() 실습</title>
+</head>
+<body>
+  <script>
+    let study = ['html', 'css', 'javascript', 'jquery', 'react', 'nodejs'];
+
+    let js = study.splice(2);
+    document.write(`반환된 배열: ${js}<br>`);
+    document.write(`변경된 배열: ${study}<hr>`);
+    
+    let jquery = js.splice(1,1);
+    document.write(`반환된 배열: ${jquery}<br>`);
+    document.write(`변경된 배열: ${js}<hr>`);
+
+    let mordernJs = js.splice(1, 0, 'typescript');
+    document.write(`반환된 배열: ${mordernJs}<br>`);
+    document.write(`변경된 배열: ${js}<hr>`);
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM 이벤트 객체 2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;                 /* html 디폴트 설정 초기화 */
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;                    /* 여기까지만 하면 화면의 중간이 안된다 이미지까지만 범위이기 때문 */
+      height: 100vh;                          /* 화면 정중앙에 놓기 위해(align items 제대로 하기 위해) 설정*/
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/kitty-1.png" id="cat">
+  </div>
+  <script>
+    // DOM을 사용해서 이벤트 처리하기
+    let cat = document.querySelector("#cat"); // id가 cat인 요소를 변수 cat에 할당
+    cat.onclick = changePic;                  // cat 클릭하면 changePic 함수 실행
+    
+    //이미지가 변하는 함수
+    function changePic() {
+      cat.src = "images/kitty-2.png";         // cat의 src 속성 변경
+    };
+
+    // 이렇게 해도 됨 : const changePic = () => {}
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
+/* 초기화 작업은 위쪽에 배치 */
+body {
+  width: 900px;
+  margin: 0 auto;
+}
+header {
+  background-color: rgb(46, 131, 127);
+  display: flex;
+}
+
+#logo {
+  margin-left: 30px;
+  font-family: "Pacifico", serif;
+  font-weight: 300;
+}
+
+#logo a {
+  text-decoration: none;
+  color: white;
+}
+
+#logo a:hover {
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.navi {
+  width: 600px;
+  height: 60px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: last baseline;
+}
+
+.navi a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navi a:hover {
+  text-shadow: 0 -2px #222;
+}
+
+.navi a:active {
+  color: black;
+}
+
+main {
+  margin: 50px;
+}
+
+.part1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.part2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.round {
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.msg {
+  line-height: 30px;
+}
+
+.footer-navi {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.footer-navi a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer-navi a::after {
+  content: "|";
+  margin-left: 30px;
+}

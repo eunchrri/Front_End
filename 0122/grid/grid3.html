@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS grid layout-3</title>
+  <style>
+    .container {
+      width: 700px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 100px);
+      gap: 1rem;
+    }
+    .box {
+      padding: 15px;
+      color: #fff;
+      text-align: center;
+
+    }
+    .box1 {
+      background-color: rgb(112, 136, 214);
+      grid-column: 1/4;
+      grid-row: 1/2;
+    }
+    .box2 {
+      background-color: rgb(153, 214, 112);
+      grid-column: 1/2;
+      grid-row: 2/4;
+    }
+    .box3 {
+      background-color: rgb(214, 112, 171);
+      grid-column: 2/4;
+      grid-row: 2/3;
+    }
+    .box4 {
+      background-color: rgb(214, 182, 112);
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+    .box5 {
+      background-color: rgb(214, 112, 112);
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+  </div> 
+</body>
+</html>

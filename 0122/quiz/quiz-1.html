@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습 과제-1</title>
+  <style>
+    .box {
+      width: 400px;
+      height: 250px;
+      border: 1px solid white;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    #grad1 {
+      background: linear-gradient(to right bottom, blue, white);
+    }
+    #grad2 {
+      background: linear-gradient(45deg, red, white);
+    }
+    #grad3 {
+      background: linear-gradient(to bottom, skyblue, white, 40px, blue);
+    }
+    #grad4 {
+      background: radial-gradient(ellipse at 50% 50%, yellow, red);
+    }
+    #grad5 {
+      background: radial-gradient(circle at 50% 50%, yellow, red);
+    }
+    #grad7 {
+      background: radial-gradient(yellow, white, orange);
+    }
+    #grad8 {
+      background: radial-gradient(yellow, white 10%, orange 60%);
+    }
+    .box2 {
+      width: 200px;
+      height: 200px;
+      border: 1px solid white;
+      border-radius: 50%;
+      box-shadow: 10px 5px 10px #ccc;
+    }
+    #grad6 {
+      background: blue;
+      background: radial-gradient(circle at 10% 20%, white, blue);
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box" id="grad1"></div>
+    <div class="box" id="grad2"></div>
+    <div class="box" id="grad3"></div>
+    <div id="inner-container">
+      <div class="box" id="grad4"></div>
+      <div class="box" id="grad5"></div>
+    </div>
+    <div class="box" id="grad7"></div>
+    <div class="box" id="grad8"></div>
+    <div class="box2" id="grad6"></div>
+  </div>
+</body>
+</html>

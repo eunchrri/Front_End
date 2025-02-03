@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rotate 실습</title>
+  <style>
+    .container {
+      width: 200px;
+      height: 200px;
+      border: 3px solid black;
+      float: left;
+      margin: 50px;
+      perspective: 300px;
+    }
+    
+    .container > div {
+     /* 트랜지션 효과 추가: 모든 방향으로 3초 동안 회전하도록 */
+     transition: all 3s; 
+    }
+    
+    .container > div > img {
+      width: 200px;
+      height: 200px;
+    }
+
+    #rotatex:hover { transform: rotateX(55deg); }
+    #rotatey:hover { transform: rotateY(55deg); }
+    #rotatez:hover { transform: rotateZ(55deg); }
+    #rotatexyz:hover { transform: rotate3d(1.8,1,-1, 55deg);}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="rotatex"><img src="images/sunset.jpg"></div>
+  </div>
+  <div class="container" id="persy">
+    <div id="rotatey"><img src="images/sunset.jpg"></div>
+  </div>
+  <div class="container">
+    <div id="rotatez"><img src="images/sunset.jpg"></div>
+  </div>
+  <div class="container">
+    <div id="rotatexyz"><img src="images/sunset.jpg"></div>
+  </div>
+</body>
+</html>
