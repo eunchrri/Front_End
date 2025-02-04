@@ -1,0 +1,23 @@
+{
+  "name": "front_end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eunchrri/Front_End.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eunchrri/Front_End/issues"
+  },
+  "homepage": "https://github.com/eunchrri/Front_End#readme",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Programming</title>
+</head>
+<body>
+  <h1>Web Programming</h1>
+  <p>공부할 주제를 기록해 보세요</p>
+  <p>주제 <input type="text">&nbsp;<button class="add">추가</button></p>
+  <hr>
+  <ul></ul>
+  <button class="delete">삭제</button>
+  <script>
+    document.querySelector(".add").addEventListener("click", () => {
+      const newItem = document.createElement("li");
+      const input = document.querySelector("input");
+      const textNode = document.createTextNode(input.value);
+
+      newItem.appendChild(textNode);
+      document.querySelector("ul").appendChild(newItem);
+    })
+    document.querySelector(".delete").addEventListener("click", ( ) => {
+      const ul = document.querySelector("ul");
+      if (ul.lastChild) {  // 마지막 요소가 있는지 확인
+        ul.removeChild(ul.lastChild);
+      }
+    });
+  </script>
+</body>
+</html>
