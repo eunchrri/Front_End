@@ -24,26 +24,18 @@
 
     // 비동기 통신에 대한 readyState가 변경될 때 호출되는 콜백 함수
     function ajaxHandler() {
-      if (httpRequest.readyState == 4) { // 응답이 완료 됐고
-        if(httpRequest.status == 200) {   // 응답이 정상일 때
+      if (httpRequest.readyState == 4) {          // 응답이 완료 됐고
+        if(httpRequest.status == 200) {           // 응답이 정상일 때
           let jsonData = httpRequest.response;
           console.log(jsonData);
 
           let info = JSON.parse(jsonData);
             let content = `
                             <table>
-                              <tr>
-                                <td>userid</td><td>${info.userId}</td>                                
-                              </tr>
-                              <tr>
-                                <td>id</td><td>${info.id}</td>                                
-                              </tr>
-                              <tr>
-                                <td>title</td><td>${info.title}</td>                                
-                              </tr>
-                              <tr>
-                                <td>body</td><td>${info.body}</td>
-                              </tr>
+                              <tr><td>userid</td><td>${info.userId}</td></tr>
+                              <tr><td>id</td><td>${info.id}</td> </tr>
+                              <tr><td>title</td><td>${info.title}</td></tr>
+                              <tr><td>body</td><td>${info.body}</td></tr>
                             </table>
                           `
           
